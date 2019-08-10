@@ -1,0 +1,32 @@
+
+Angular Ngxs tutorial
+https://coursetro.com/posts/code/152/Angular-NGXS-Tutorial---An-Alternative-to-Ngrx-for-State-Management
+
+
+## Get Started:
+
+As always, we're going to use the Angular CLI to start a new project in the console:
+> ng new ngxs-intro
+> cd ngxs-intro
+
+Next, we'll install ngxs store, logger-plugin and devtools-plugin:
+> yarn add @ngxs/store
+
+> yarn add @ngxs/logger-plugin @ngxs/devtools-plugin --dev
+
+> ng g c read
+> ng g c create
+
+## Defining a Model
+Create the folder and file: /src/app/models/tutorial.model.ts with the contents:
+
+## Defining Actions
+Similar to Ngrx, we define actions in NGXS as well. We'll create two actions for adding and removing tutorials.
+
+Create the folder and file: /src/app/actions/tutorial.actions.ts with the contents:
+
+
+## Defining a State
+A key difference between Ngrx and Ngxs is how the state is handled. The state file(s) in Ngxs take the place of reducers in Ngrx. This is done by utilizing various decorators.
+
+Create the folder and file: /src/app/state/tutorial.state.ts with the content:
